@@ -1,15 +1,19 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-$active_group = 'wallpaper';
+$path = str_replace("api\\","",FCPATH);
+$path = str_replace("api\/","",$path);
+
+$config = include $path."config.php";
+$active_group = 'wall';
 $query_builder = TRUE;
 
-$db['wallpaper'] = array(
+$db['wall'] = array(
 	'dsn'	=> '',
-	'hostname' => '',
-	'username' => '',
-	'password' => '',
-	'database' => '',
+	'hostname' => $config['hostname'],
+	'username' => $config['username'],
+	'password' => $config['password'],
+	'database' => $config['database'],
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
