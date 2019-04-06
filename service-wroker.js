@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.c7ad5e771b05d6d5c88779a95859ee91.js"
+  "/precache-manifest.3665aa9a2348607478c14678e122fbea.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "nexmoe-pwa"});
