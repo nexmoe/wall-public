@@ -1,6 +1,9 @@
 ## 介绍
 一个基于 Vue.js 的匿名表白墙轻量级小程序
 
+## 作者
+折影轻梦（Nexmoe），根据MIT许可证发布。
+
 ## Demo
 - [https://wall.chainwon.com/](https://wall.chainwon.com/)
 - 欢迎大家在 issue 或者 pull request 中添加你部署好的网站链接
@@ -18,5 +21,8 @@
 ## PWA支持
 service-wroker 已配置好了，只需要修改 `/static/manifest.json` 里面的内容即可
 
-## 作者
-折影轻梦（Nexmoe），根据MIT许可证发布。
+
+## 后续更新
+就读高中，
+star 以及 issue 是我更新的动力
+欢迎加群 482634342 划水
