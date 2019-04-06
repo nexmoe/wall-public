@@ -8,6 +8,9 @@
 - [https://wall.chainwon.com/](https://wall.chainwon.com/)
 - 欢迎大家在 issue 或者 pull request 中添加你部署好的网站链接
 
+## 屏幕截图 
+![屏幕截图](screenshots.png)
+
 ## 环境准备
 - 支持 PHP 的服务器，PHP7以上版本最佳
 - 支持 Apache 的服务器
