@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 $path = str_replace("api\\","",FCPATH);
-$path = str_replace("api\/","",$path);
+$path = str_replace("api/","",$path);
 
 $config = include $path."config.php";
 $active_group = 'wall';
