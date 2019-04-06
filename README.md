@@ -29,3 +29,6 @@ service-wroker 已配置好了，只需要修改 `/static/manifest.json` 里面�
 就读高中，
 star 以及 issue 是我更新的动力
 欢迎加群 482634342 划水
+
+## 交流
+用户交流群：797996017
