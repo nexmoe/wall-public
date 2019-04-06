@@ -1,6 +1,10 @@
 ## 介绍
 一个基于 Vue.js 的匿名表白墙轻量级小程序
 
+## Demo
+- [https://wall.chainwon.com/](https://wall.chainwon.com/)
+- 欢迎大家在 issue 或者 pull request 中添加你部署好的网站链接
+
 ## 环境准备
 - 支持 PHP 的服务器，PHP7以上版本最佳
 - 支持 Apache 的服务器
