@@ -12,11 +12,11 @@
 ## 安装
 - 新建数据库
 - 新建表，命名为 wall
-- 导入根目录初始数据库文件 wall.sql
-- 编辑根目录 config.php 文件进行数据库信息配置
+- 导入根目录初始数据库文件 `wall.sql`
+- 编辑根目录 `config.php` 文件进行数据库信息配置
 
 ## PWA支持
-service-wroker 已配置好了，只需要修改 /static/manifest.json 里面的内容即可
+service-wroker 已配置好了，只需要修改 `/static/manifest.json` 里面的内容即可
 
 ## 作者
 折影轻梦（Nexmoe），根据MIT许可证发布。
