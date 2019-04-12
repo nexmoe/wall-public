@@ -2,7 +2,7 @@
 一个基于 Vue.js 的匿名表白墙轻量级小程序
 
 ## 作者
-折影轻梦（Nexmoe），根据MIT许可证发布。
+折影轻梦（Nexmoe），根据 Apache 许可证发布。
 
 ## Demo
 - [https://wall.chainwon.com/](https://wall.chainwon.com/)
