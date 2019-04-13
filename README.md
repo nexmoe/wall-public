@@ -16,6 +16,7 @@
 - 支持 Apache 的服务器
 
 ## 安装
+- 去 [https://github.com/nexmoe/wall-public/releases](https://github.com/nexmoe/wall-public/releases) 下载 zip 包安装
 - 将程序解压到网站根目录
 - 访问 `域名/install.php` 填写表单安装即可
 
