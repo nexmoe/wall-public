@@ -1,14 +1,9 @@
--- Adminer 4.6.3 MySQL dump
-
 SET NAMES utf8;
 SET time_zone = '+00:00';
 SET foreign_key_checks = 0;
 SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
 
 SET NAMES utf8mb4;
-
-CREATE DATABASE `wall` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */;
-USE `wall`;
 
 DROP TABLE IF EXISTS `category`;
 CREATE TABLE `category` (
@@ -20,11 +15,13 @@ CREATE TABLE `category` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `category` (`cid`, `name`, `description`, `count`) VALUES
-(2333,	'表白',	NULL,	0),
+(2333,	'表白',	'表白，或称告白意为向他人表示自己的想法或心意，特指表达爱意，又称示爱，在这种情况下通常被认为是建立恋爱关系的方式。',	0),
 (2334,	'失物招领',	NULL,	0),
 (2335,	'安利',	NULL,	0),
 (2336,	'默认分类',	NULL,	0),
 (2337,	'寻物启事',	NULL,	0);
+
+SET NAMES utf8mb4;
 
 DROP TABLE IF EXISTS `comment`;
 CREATE TABLE `comment` (
@@ -38,8 +35,7 @@ CREATE TABLE `comment` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `comment` (`coid`, `mid`, `author`, `text`, `time`, `parent`) VALUES
-(2333,	2333,	'776194970',	'加快了第二次打开的速度',	1550993439,	0),
-(2334,	2333,	'776194970',	'❤',	1550994000,	0),
+(2333,	2403,	'776194970',	'意见反馈区',	1549544960,	0);
 
 DROP TABLE IF EXISTS `message`;
 CREATE TABLE `message` (
@@ -53,7 +49,8 @@ CREATE TABLE `message` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 INSERT INTO `message` (`mid`, `cid`, `author`, `article`, `time`, `anonymous`) VALUES
-(2333,	2333,	'776194970',	'[{\"type\":\"p\",\"text\":\"\\u6211\\u6c38\\u8fdc\\u559c\\u6b22\\u53cb\\u5229\\u5948\\u7eea\\uff01\\uff01\"},{\"type\":\"img\",\"text\":\"https:\\/\\/i.loli.net\\/2019\\/02\\/05\\/5c59887eda177.jpg\"}]',	1549371606,	'false'),
+(2403,	2336,	'776194970',	'[{\"type\":\"p\",\"text\":\"\\u610f\\u89c1\\u53cd\\u9988\\uff0c\"},{\"type\":\"p\",\"text\":\"\\u5173\\u4e8eAPP\\u7684\\u610f\\u89c1\\u8bf7\\u5728\\u8fd9\\u91cc\\u53cd\\u9988\\u3002\"}]',	0,	'false');
+
 DROP TABLE IF EXISTS `notice`;
 CREATE TABLE `notice` (
   `inid` int(10) NOT NULL AUTO_INCREMENT,
@@ -66,9 +63,4 @@ CREATE TABLE `notice` (
   PRIMARY KEY (`inid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
-INSERT INTO `notice` (`inid`, `type`, `time`, `mid`, `coid`, `uid`, `read`) VALUES
-(2333,	'reply',	1550941664,	2333,	2333,	776194970,	'false'),
-(2334,	'reply',	1550941664,	2333,	2334,	776194970,	'false'),
-
-
--- 2019-04-06 08:12:19
+INSERT INTO `notice` (`inid`, `type`, `time`, `mid`, `coid`, `uid`, `read`);
