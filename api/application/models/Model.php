@@ -63,11 +63,19 @@ class Model extends CI_Model {
         $pattern = '/portraitCallBack\((.*)\)/is';
         preg_match($pattern,$data,$result);
         $result = $result[1];
-        return array(
-            "name" => json_decode($result, true)[$qq][6],
-            "avatar" => 'https://avatar.dawnlab.me/qq/'.$qq,
-            "qq" => $qq
-        );
+        if(json_decode($result, true)[$qq][6]!=null){
+            return array(
+                "name" => json_decode($result, true)[$qq][6],
+                "avatar" => 'https://avatar.dawnlab.me/qq/'.$qq,
+                "qq" => $qq
+            );
+        }else{
+            return array(
+                "name" => 'QQ号不存在',
+                "avatar" => 'https://avatar.dawnlab.me/qq/'.$qq,
+                "qq" => $qq
+            );
+        }
     }
 
     public function category($cid) {
