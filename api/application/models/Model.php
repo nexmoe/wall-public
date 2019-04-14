@@ -63,7 +63,7 @@ class Model extends CI_Model {
         $pattern = '/portraitCallBack\((.*)\)/is';
         preg_match($pattern,$data,$result);
         $result = $result[1];
-        if(json_decode($result, true)[$qq][6]!=null){
+        if(isset(json_decode($result, true)[$qq][6])){
             return array(
                 "name" => json_decode($result, true)[$qq][6],
                 "avatar" => 'https://avatar.dawnlab.me/qq/'.$qq,
