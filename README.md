@@ -55,6 +55,3 @@ star 以及 issue 是我更新的动力!
 
 ## PWA支持
 service-wroker 已配置好了，只需要修改 `/static/manifest.json` 里面的内容即可
-
-## 交流
-用户交流群：797996017
